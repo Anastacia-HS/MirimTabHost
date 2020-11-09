@@ -26,5 +26,7 @@ public class MainActivity extends TabActivity {
         TabHost.TabSpec tabSpecWave = tabHost.newTabSpec("wave").setIndicator("파도");
         tabSpecSakura.setContent(R.id.linear_wave);
         tabHost.addTab(tabSpecWave);
+
+        tabHost.setCameraDistance(0);
     }
 }
